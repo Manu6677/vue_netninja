@@ -1,0 +1,29 @@
+1) If you are using Vue to enhance server-rendered HTML and only need Vue to control specific parts of a large page,
+     avoid mounting a single Vue application instance on the entire page. Instead, 
+      create multiple small application instances and mount them on the elements they are responsible for.
+
+2) Under the hood, Vue compiles the templates into highly-optimized JavaScript code. 
+    Combined with the "reactivity" system, Vue can intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
+
+3) The most basic form of data binding is text interpolation using the "Mustache" syntax
+4) The double mustaches interpret the data as plain text, not HTML. In order to output real HTML, you will need to use the v-html directive:
+
+-----------------------------Vuejs 3----------------------------
+1) Gives the composition API which
+   -> Improve the reusability, organization and readability
+     -> it does this by giving us a new setup() function
+2) We can have a multiple root elemennts side by side before we have to wrap everything inside single template
+
+3) Teleport Component => Render content from one component in a different place in the DOM (useful for modals)
+4) Suspense Component
+
+5) There is a difference between the v-if and v-show
+    v-if => completely remove the tag(div) from the DOM but 
+
+     v-show work on the CSS when hides something it is not removed from the DOM just
+       make css property style="display: none"
+
+    
+what is proxy
+
+6) In the event first arguement is e
